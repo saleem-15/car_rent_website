@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- start bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome v 4.7-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--my css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- list page css -->
+    <link rel="stylesheet" href="css/list-page-style.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <header>
+        <div class="first-nav">
+            <div class="container">
+                <div class="first">
+                    <div class="logo"><i class="fa fa-download"></i><span>Download the App</span></div>
+                    <div class="log">
+                        <div class="select">
+                            <span>Lang:</span>
+                            <select name="" id="">
+                  <option value="eng">Eng</option>
+                  <option value="ar">Ar</option>
+                </select>
+                        </div>
+                        <div class="sign">
+                            <div class="login"><i class="fa fa-user-circle-o"></i><span>Login</span></div>
+                            <div>
+                                <span>/</span><span>Register</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-nav">
+            <div class="container">
+                <div class="second">
+                    <div><span>24/7 support for Contact</span>
+                        <p>(1) 408 445 1331</p>
+                    </div>
+
+
+                    <a href="#">
+                        <div><img src="images/Icon-key.png" alt="" width="50" height="50"><span>Levley</span></div>
+                    </a>
+
+                    <!-- <div><img src="images/Icon-key.png" alt="" width="50" height="50"><span>Levley</span></div> -->
+                    <div><a href="" class="btn btn-primary">Submit your Ad</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start breadcrumb -->
+    <div class="breadC">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Car</a></li>
+                <li class="active">Car Gridview</li>
+            </ol>
+        </div>
+    </div>
+    <!-- End breadcrumb -->
+    <!-- Start Section form head page -->
+    <section class="head-page" style="background: url('images/ThanitJuly_.jpg') center center no-repeat;height:360px;background-size: cover;">
+        <div class="container">
+            <div class="form">
+
+                <form action="" class="form-group">
+                    <select name="" id="" class="form-control">
+            <option value="Palestine">All City</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Palestine">Palestine</option>
+          </select>
+                    <select name="" id="" class="form-control">
+            <option value="Palestine">All Categories</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Palestine">Palestine</option>
+          </select>
+                    <input type="search" name="" id="" placeholder="Search in all city">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-search"></i><span>Search</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Section form head page -->
+    <!-- Start List Section -->
+    <section class="list-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <select name="" id="" class="form-control">
+                <option value="Brand Name">Brand Name</option>
+            </select>
+                </div>
+                <div class="col-lg-3">
+                    <select name="" id="" class="form-control">
+                <option value="Brand Name">Price Range</option>
+            </select>
+                </div>
+                <div class="col-lg-3">
+                    <select name="" id="" class="form-control">
+                <option value="Brand Name">Fuel Type</option>
+            </select>
+                </div>
+                <div class="col-lg-3">
+                    <select name="" id="" class="form-control">
+                <option value="Brand Name">More Details</option>
+            </select>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="sorting col-lg-6 col-lg-offset-6">
+                <div class="view">
+                    <span>View By:</span>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                <!-- <img src="images/list.png" alt=""> -->
+                                <i class="fa fa-th-list"></i>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                                <!-- <img src="images/menu.png" alt=""> -->
+                                <i class="fa fa-th"></i>
+                            </a>
+                        </li>
+                        <!-- <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li> -->
+                    </ul>
+                </div>
+                <div class="sort">
+                    <span>Sort By:</span>
+                    <!-- <select name="" id="" class="form-control">
+        <option value="Most Relevant" data-filter=".all"><a href="#all"></a> Most Relevant</option>
+    <option value="Most Sale" data-filter=".sale"><a href="#all"></a> Most Sale</option>
+    </select> -->
+                    <p>
+                        <select class="filters-select form-control">
+        <option value="*">show all</option>
+        <option value=".metal">metal</option>
+        <option value=".transition">transition</option>
+        <option value=".alkali, .alkaline-earth">alkali and alkaline-earth</option>
+        <!-- <option value=":not(.transition)">not transition</option>
+        <option value=".metal:not(.transition)">metal but not transition</option>
+        <option value="numberGreaterThan50">number > 50</option>
+        <option value="ium">name ends with &ndash;ium</option> -->
+    </select>
+                    </p>
+                </div>
+                <!-- Tab panes -->
+
+
+            </div>
+            <div class="tab-content">
+                <!-- <div role="tabpanel" class="tab-pane active" id="home">...</div> -->
+                <div role="tabpanel" class="tab-pane active" id="profile">
+                    <div class="row">
+                        <div class="boxes col-lg-9 col-xs-12">
+                            <div class="element-item transition metal " data-category="transition">
+
+                                <div class="prime">
+                                    <span>Prime</span>
+                                </div>
+                                <div class="img">
+                                    <a href="#" class="overlay">
+                                        <img src="images/verified-stamp.png" alt="">
+                                    </a>
+                                    <img src="images/car-2.jpg" alt="" height="">
+                                </div>
+                                <div class="content">
+                                    <div class="head">
+                                        <h6>LEXUS RX 350 MODEL CAR</h6>
+                                        <span>$48.76</span>
+                                    </div>
+                                    <div class="middle">
+                                        <span>Cars-Lexus</span>
+                                        <p>Tennessee,USA</p>
+                                        <span>Sale</span>
+                                    </div>
+                                    <div class="footer">
+                                        <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                        <img src="images/verified-stamp.png" alt="" height="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-item transition col-lg-4">
+                                <div class="prime">
+                                    <span>Prime</span>
+                                </div>
+                                <div class="img">
+                                    <a href="#" class="overlay">
+                                        <img src="images/verified-stamp.png" alt="">
+                                    </a>
+                                    <img src="images/car-2.jpg" alt="" height="">
+                                </div>
+                                <div class="content">
+                                    <div class="head">
+                                        <h6>LEXUS RX 350 MODEL CAR</h6>
+                                        <span>$48.76</span>
+                                    </div>
+                                    <div class="middle">
+                                        <span>Cars-Lexus</span>
+                                        <p>Tennessee,USA</p>
+                                        <span>Sale</span>
+                                    </div>
+                                    <div class="footer">
+                                        <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                        <img src="images/verified-stamp.png" alt="" height="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-item metalloid col-lg-4" data-category="metalloid">
+                                <div class="prime">
+                                    <span>Prime</span>
+                                </div>
+                                <div class="img">
+                                    <a href="#" class="overlay">
+                                        <img src="images/verified-stamp.png" alt="">
+                                    </a>
+                                    <img src="images/car-2.jpg" alt="" height="">
+                                </div>
+                                <div class="content">
+                                    <div class="head">
+                                        <h6>LEXUS RX 350 MODEL CAR</h6>
+                                        <span>$48.76</span>
+                                    </div>
+                                    <div class="middle">
+                                        <span>Cars-Lexus</span>
+                                        <p>Tennessee,USA</p>
+                                        <span>Sale</span>
+                                    </div>
+                                    <div class="footer">
+                                        <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                        <img src="images/verified-stamp.png" alt="" height="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-item post-transition metal " data-category="post-transition">
+                                <div class="prime">
+                                    <span>Prime</span>
+                                </div>
+                                <div class="img">
+                                    <a href="#" class="overlay">
+                                        <img src="images/verified-stamp.png" alt="">
+                                    </a>
+                                    <img src="images/car-2.jpg" alt="" height="">
+                                </div>
+                                <div class="content">
+                                    <div class="head">
+                                        <h6>LEXUS RX 350 MODEL CAR</h6>
+                                        <span>$48.76</span>
+                                    </div>
+                                    <div class="middle">
+                                        <span>Cars-Lexus</span>
+                                        <p>Tennessee,USA</p>
+                                        <span>Sale</span>
+                                    </div>
+                                    <div class="footer">
+                                        <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                        <img src="images/verified-stamp.png" alt="" height="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-item post-transition metal " data-category="post-transition">
+                                <div class="prime">
+                                    <span>Prime</span>
+                                </div>
+                                <div class="img">
+                                    <a href="#" class="overlay">
+                                        <img src="images/verified-stamp.png" alt="">
+                                    </a>
+                                    <img src="images/car-2.jpg" alt="" height="">
+                                </div>
+                                <div class="content">
+                                    <div class="head">
+                                        <h6>LEXUS RX 350 MODEL CAR</h6>
+                                        <span>$48.76</span>
+                                    </div>
+                                    <div class="middle">
+                                        <span>Cars-Lexus</span>
+                                        <p>Tennessee,USA</p>
+                                        <span>Sale</span>
+                                    </div>
+                                    <div class="footer">
+                                        <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                        <img src="images/verified-stamp.png" alt="" height="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-xs-4 text-center">
+                            <div class="nissan">
+                                <div class="head">
+                                    <div class="logo">
+                                        <img src="images/nissan-logo-700.png" alt="N" width="56" height="48">
+                                        <h5>Innovation <br>That Excites</h5>
+                                    </div>
+                                    <div class="price">
+                                        TERRANO<br> Starts at Just
+                                        <span>$48.07</span>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h4>COMMAND THE ROAD & ALL THE ATTENTION</h4>
+                                </div>
+                                <div class="img-car">
+                                    <img src="images/nissan car.png" alt="" width="222">
+                                </div>
+                                <div class="details">
+                                    <h4>For a test Drive, Give a missed call To <span>(1) 404-882-2622</span></h4>
+                                </div>
+                                <hr>
+                                <div class="contact">
+                                    <span>www.nissen.ac.in</span>
+                                    <ul class="social">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="line">
+                                    <h4>Powered By</h4>
+                                    <h3>NISSAN FINANCE</h3>
+                                </div>
+                                <div class="footer-ad">
+                                    <p>*Terms & Conditions Apply</p>
+                                </div>
+                            </div>
+                            <div class="jaguar">
+                                <div class="links">
+                                    <a href="#">
+                                        <h5>www.jaguar.co.uk/fleet</h5>
+                                    </a>
+                                    <a href="#"><img src="images/nissan-logo-700.png" alt="" width="56" height="48"></a>
+                                </div>
+                                <div class="p">
+                                    <h4>THE JAGUAR BUSINESS RANGE FROM 129 G/KM</h2>
+                                </div>
+                                <div class="img-j">
+                                    <img src="images/nissan car.png" alt="" width="222">
+                                </div>
+                                <div class="footer-ad">
+                                    <p>*Terms & Conditions Apply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane  " id="messages">
+                    <div class="boxes">
+                        <div class="element-item transition metal " data-category="transition">
+
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item transition">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item metalloid col-lg-4" data-category="metalloid">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item post-transition metal " data-category="post-transition">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item post-transition metal " data-category="post-transition">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item transition metal " data-category="transition">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item alkali metal " data-category="alkali">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item alkali metal " data-category="alkali">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item transition metal " data-category="transition">
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="element-item transition metal " data-category="transition">
+
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item transition metal " data-category="transition">
+
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item transition metal " data-category="transition">
+
+                            <div class="prime">
+                                <span>Prime</span>
+                            </div>
+                            <div class="img">
+                                <a href="#" class="overlay">
+                                    <img src="images/verified-stamp.png" alt="">
+                                </a>
+                                <img src="images/car-2.jpg" alt="" height="">
+                            </div>
+                            <div class="content">
+                                <div class="head">
+                                    <h6>LEXUS RX 350 MODEL CAR</h6>
+                                    <span>$48.76</span>
+                                </div>
+                                <div class="middle">
+                                    <span>Cars-Lexus</span>
+                                    <p>Tennessee,USA</p>
+                                    <span>Sale</span>
+                                </div>
+                                <div class="footer">
+                                    <span><font color="#828383">Posted On:</font> Aug 28,2017</span>
+                                    <img src="images/verified-stamp.png" alt="" height="">
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                </div>
+                <!-- <div role="tabpanel" class="tab-pane" id="settings">...b</div> -->
+            </div>
+            <!-- <div class="row">
+                <div class="boxes ad" id="all">
+                    <div class="box sale">
+                        <img src="images/car-2.jpg" alt="" height="200" style="margin-bottom: 50px;">
+                    </div>
+                    <div class="box">
+                        <img src="images/car-2.jpg" alt="" height="200" style="margin-bottom: 50px;">
+                    </div>
+                    <div class="box sale">
+                        <img src="images/car-2.jpg" alt="" height="200" style="margin-bottom: 50px;">
+                    </div>
+                    <div class="box">
+                        <img src="images/car-2.jpg" alt="" height="200" style="margin-bottom: 50px;">
+                    </div>
+                    <div class="box">
+                        <img src="images/car-2.jpg" alt="" height="200" style="margin-bottom: 50px;">
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div>
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">View By</a></li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                            <img src="images/list.png" alt="">
+                        </a>
+                    </li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+                    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                </div>
+
+            </div> -->
+            <nav aria-label="Page navigation" class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">Newer Posts</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">Older Posts</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- End List Section -->
+    <!-- Start footer -->
+    <footer class="mt-auto">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="title-head">
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+
+                            <h4>Why Choose in New York</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut ratione, obcaecati deserunt saepe inventore provident magnam officiis sed expedita veritatis ad iure voluptate? Deserunt dolores modi nulla officia nihil?</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <h4>What to Rent?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut ratione, obcaecati deserunt saepe inventore provident magnam officiis sed expedita veritatis ad iure voluptate? Deserunt dolores modi nulla officia nihil?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="footer-content">
+
+                            <div><img src="images/Icon-key.png" alt="" width="50" height="50"><span id="levely">Levley</span></div>
+                            <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellendus iste fuga architecto neque magnam aspernatur nam ducimus soluta recusandae, suscipit obcaecati eius accusamus. Molestias fugit distinctio
+                                libero eveniet unde.
+                            </p>
+                            <ul class="footer-links">
+                                <li><a href="" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="social-link"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="" class="social-link"><i class="fa fa-google-plus"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <div class="footer-content">
+
+                            <h4>Rental</h4>
+                            <ul class="footer-links">
+                                <li><a href="" class="footer-link">About Us</a></li>
+                                <li><a href="" class="footer-link">Culture</a></li>
+                                <li><a href="" class="footer-link">Investors</a></li>
+                                <li><a href="" class="footer-link">Careers</a></li>
+                                <li><a href="" class="footer-link">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 differ col-sm-6 col-xs-12">
+                        <div class="footer-content">
+
+                            <ul class="footer-links">
+                                <li><a href="" class="footer-link">Blog</a></li>
+                                <li><a href="" class="footer-link">FAQs</a></li>
+                                <li><a href="" class="footer-link">Rental Terms & Conditions</a></li>
+                                <li><a href="" class="footer-link">Documents that we ask</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="footer-content">
+
+                            <h4>Policies</h4>
+                            <ul class="footer-links">
+                                <li><a href="" class="footer-link">Shipping Policy</a></li>
+                                <li><a href="" class="footer-link">Privacy Policy</a></li>
+                                <li><a href="" class="footer-link">Cancellations & Modifications</a></li>
+                                <li><a href="" class="footer-link">Return & Refund</a></li>
+                                <li><a href="" class="footer-link">Referral Terms & Conditions</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myLargeModalLabel">Search for your dream car</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="example" action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery-->
+    <script src="js/jquery.js"></script>
+    <!-- isotope -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
+    <!-- <script src="js/isotope.js"></script> -->
+    <!--bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
